@@ -11,11 +11,11 @@ export default function StatisticsList({title, stats}) {
         {title && <h2 class="title">{title}</h2>}
             <ul class="stat-list">
                 {
-                    stats.map(stats => (
-                        <li class="item" key={stats.id}>
+                    stats.map(stat => (
+                        <li class="item" key={stat.id}>
                             <Statistics 
-                                label={stats.label}
-                                percentage={stats.percentage}
+                                label={stat.label}
+                                percentage={stat.percentage}
                             />
                         </li>
                     ))
