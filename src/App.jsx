@@ -1,5 +1,5 @@
-import Profile from './components/Profile';
-import StatisticsList from './components/StatisticsList';
+import Profile from './components/Profile/Profile';
+import StatisticsList from './components/StatisticsList/StatisticsList';
 import FriendList from './components/FriendList';
 import TransactionHistory from './components/TransactionHistory';
 import user from './data/user'
