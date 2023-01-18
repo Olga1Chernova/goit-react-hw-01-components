@@ -1,0 +1,26 @@
+.avatar{
+    width: 100px;
+}
+
+.name{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.status {
+  display: block;
+
+  margin-right: 30px;
+  height: 20px;
+  width: 20px;
+
+  border-radius: 50%;
+}
+
+.true {
+    background-color: green;
+}
+
+.false {
+    background-color: red;
+}

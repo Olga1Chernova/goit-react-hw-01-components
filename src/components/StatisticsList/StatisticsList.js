@@ -1,10 +1,7 @@
 import PropTypes from 'prop-types';
 import Statistics from "../Statistics/Statistics";
 import css from './StatisticsList.module.css';
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
+import getRandomHexColor from 'utils/getRandomColor';
 
 export default function StatisticsList({title, stats}) {
     return (

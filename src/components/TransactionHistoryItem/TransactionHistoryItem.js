@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import css from './TransactionHistoryItem.module.css'
 
 export default function TransactionHistoryItem({type, amount, currency}) {
     return (
         <>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
+            <td className={css['transaction-data']}>{type}</td>
+            <td className={css['transaction-data']}>{amount}</td>
+            <td className={css['transaction-data']}>{currency}</td>
         </>
     )
 }
