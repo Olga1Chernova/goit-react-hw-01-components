@@ -1,0 +1,17 @@
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 15px;
+    margin-top: 40px;
+    background-color: #fff;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+.btn.active{
+    background-color: red;
+    color: #fff;
+}

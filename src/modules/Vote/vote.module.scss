@@ -1,0 +1,13 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    gap: 30px;
+}
+
+.title{
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}

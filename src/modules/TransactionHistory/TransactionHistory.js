@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import TransactionHistoryItem from '../TransactionHistoryItem/TransactionHistoryItem';
+import TransactionHistoryItem from '../../shared/components/ToggleButton/TransactionHistoryItem/TransactionHistoryItem';
 import css from './TransactionHistory.module.css';
 
 export default function TransactionHistory({ items }) {

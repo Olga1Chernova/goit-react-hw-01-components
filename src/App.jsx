@@ -1,11 +1,19 @@
-import Profile from './components/Profile/Profile';
-import StatisticsList from './components/StatisticsList/StatisticsList';
-import FriendList from './components/FriendList/FriendList';
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import Profile from './modules/Profile/Profile';
+import StatisticsList from './modules/StatisticsList/StatisticsList';
+import FriendList from './modules/FriendList/FriendList';
+import TransactionHistory from './modules/TransactionHistory/TransactionHistory';
+import MainMenu from 'modules/MainMenu/MainMenu';
+import Vote from 'modules/Vote/Vote';
+
+import ToggleButton from 'shared/components/ToggleButton/ToggleButton/ToggleButton';
+
 import user from './data/user'
 import data from './data/data';
 import friends from "./data/friends";
 import transactions from './data/transactions';
+import menuItems from './data/menuItems';
+
+import './shared/styles/styles.scss';
 
 export default function App() {
   return (
@@ -25,7 +33,11 @@ export default function App() {
           />
           <TransactionHistory
               items={transactions}
-          />
+      />
+      <MainMenu
+        items={menuItems} />
+      <ToggleButton text="Subscribe" type="button" />
+      <Vote />
     </div>
   );
 };
