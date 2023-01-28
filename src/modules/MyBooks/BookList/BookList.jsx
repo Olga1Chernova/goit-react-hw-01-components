@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import styles from "../my-books.module.scss";
 
 const BookList = ({ removeBook, items }) => {
@@ -15,4 +17,13 @@ export default BookList;
 
 BookList.defaultProps = {
     items: []
+}
+
+BookList.propTypes = {
+    removeBook: PropTypes.func.isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        author: PropTypes.string.isRequired,
+    }))
 }

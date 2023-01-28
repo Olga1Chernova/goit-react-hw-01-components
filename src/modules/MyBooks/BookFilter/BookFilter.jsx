@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import styles from "../my-books.module.scss";
 
 const BooksFilter = ({handleChange}) => {
@@ -10,3 +12,7 @@ const BooksFilter = ({handleChange}) => {
 }
 
 export default BooksFilter;
+
+BooksFilter.propTypes = {
+    handleChange: PropTypes.func.isRequired,
+}
