@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Statistics from "../../shared/components/Statistics/Statistics";
+import Statistics from "./Statistics/Statistics";
 import css from './StatisticsList.module.css';
 import getRandomHexColor from 'utils/getRandomColor';
 

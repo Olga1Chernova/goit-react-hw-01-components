@@ -1,7 +1,7 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
 
-import styles from "./ToggleButton.module.css";
+import styles from "./ToggleButton.module.scss";
 
 class ToggleButton extends Component{
     static defaultProps = {

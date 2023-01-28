@@ -2,10 +2,11 @@ import Profile from './modules/Profile/Profile';
 import StatisticsList from './modules/StatisticsList/StatisticsList';
 import FriendList from './modules/FriendList/FriendList';
 import TransactionHistory from './modules/TransactionHistory/TransactionHistory';
-import MainMenu from 'modules/MainMenu/MainMenu';
-import Vote from 'modules/Vote/Vote';
+import MainMenu from './modules/MainMenu/MainMenu';
+import Vote from './modules/Vote/Vote';
+import MyBook from './modules/MyBooks/MyBooks';
 
-import ToggleButton from 'shared/components/ToggleButton/ToggleButton/ToggleButton';
+import ToggleButton from 'shared/components/ToggleButton/ToggleButton';
 
 import user from './data/user'
 import data from './data/data';
@@ -38,6 +39,7 @@ export default function App() {
         items={menuItems} />
       <ToggleButton text="Subscribe" type="button" />
       <Vote />
+      <MyBook />
     </div>
   );
 };
